@@ -1,0 +1,132 @@
+/* Variables */
+.main {
+    --tw-sidebar-transition-duration: 0.3s;
+    --tw-sidebar-transition-timing: ease;
+    --tw-sidebar-width: theme('custom.layouts.main.sidebar.width.desktop');
+    --tw-sidebar-default-width: theme('custom.layouts.main.sidebar.width.desktop');
+    --tw-header-height: theme('custom.layouts.main.header.height.desktop');
+}
+
+@media (max-width: theme('screens.lg')) {
+    .main {
+        --tw-sidebar-width: theme('custom.layouts.main.sidebar.width.mobile');
+        --tw-header-height: theme('custom.layouts.main.header.height.mobile');
+    }
+}
+
+/* Base */
+.main .header {
+    height: var(--tw-header-height);
+}
+
+.main .sidebar {
+    width: var(--tw-sidebar-width);
+}
+
+.main.header-fixed .wrapper {
+    padding-top: var(--tw-header-height);
+}
+
+/* Desktop mode */
+@media (min-width: theme('screens.lg')) {
+    .main .sidebar {
+        width: var(--tw-sidebar-width);
+        transition: width var(--tw-sidebar-transition-duration) var(--tw-sidebar-transition-timing);
+    }
+
+    .main .sidebar .sidebar-header {
+        height: var(--tw-header-height);
+    }
+
+    .main .sidebar .sidebar-wrapper {
+        width: var(--tw-sidebar-default-width);
+    }
+
+    .main .sidebar .sidebar-logo {
+        width: var(--tw-sidebar-default-width);
+    }
+
+    .main .sidebar .small-logo {
+        display: none;
+    }
+
+    .main.sidebar-fixed .wrapper {
+        padding-inline-start: var(--tw-sidebar-width);
+    }
+
+    .main.sidebar-fixed.header-fixed .header {
+        inset-inline-start: var(--tw-sidebar-width);
+    }
+
+    .main.sidebar-fixed.header-fixed .wrapper {
+        padding-top: var(--tw-header-height);
+    }
+
+    .main.sidebar-collapse {
+        --tw-sidebar-width: theme('custom.layouts.main.sidebar.width.desktopCollapse');
+    }
+
+    .main.sidebar-collapse .sidebar {
+        transition: width var(--tw-sidebar-transition-duration) var(--tw-sidebar-transition-timing);
+    }
+
+    .main.sidebar-collapse .sidebar.animating {
+        pointer-events: none;
+    }
+
+    .main.sidebar-collapse .sidebar:hover:not(.animating) {
+        width: var(--tw-sidebar-default-width);
+        transition: width var(--tw-sidebar-transition-duration) var(--tw-sidebar-transition-timing);
+    }
+
+    .main.sidebar-collapse .sidebar:not(:hover) .default-logo {
+        display: none;
+    }
+
+    .main.sidebar-collapse .sidebar:not(:hover) .small-logo {
+        display: flex;
+    }
+
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-link .menu-title,
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-link .menu-arrow,
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-link .menu-badge,
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-label .menu-title,
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-label .menu-arrow,
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-label .menu-badge {
+        display: none;
+    }
+
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-accordion {
+        display: none;
+    }
+
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-heading {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .main.sidebar-collapse .sidebar:not(:hover) .menu > .menu-item > .menu-heading::before {
+        content: '...';
+        color: currentColor;
+        font-size: inherit;
+        position: absolute;
+        visibility: visible;
+        display: inline-block;
+        bottom: 50%;
+        inset-inline-start: 0;
+        margin-inline-start: 0.225rem;
+        transform: translateX(100%);
+    }
+
+    .main.sidebar-collapse .sidebar .sidebar-content {
+        overflow: hidden;
+    }
+}
+
+.main.layout-initialized .wrapper {
+    transition: padding-inline-start var(--tw-sidebar-transition-duration) var(--tw-sidebar-transition-timing);
+}
+
+.main.layout-initialized .header {
+    transition: inset-inline-start var(--tw-sidebar-transition-duration) var(--tw-sidebar-transition-timing);
+}
