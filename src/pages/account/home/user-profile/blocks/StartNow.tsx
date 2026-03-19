@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 const StartNow = () => {
     return (

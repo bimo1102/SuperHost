@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 interface IUpcomingEventsItem {
     month: string;

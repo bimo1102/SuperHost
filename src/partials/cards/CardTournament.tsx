@@ -1,4 +1,4 @@
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 interface ITournamentProps {
     image: string;

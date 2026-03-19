@@ -1,15 +1,16 @@
-import { Fragment, useRef, useState } from 'react';
 import { Menu, MenuIcon, MenuItem, MenuLabel, MenuSub, MenuTitle, MenuToggle } from '@/components/menu';
-import { KeenIcon } from '../keenicons';
-import { useLanguage } from '@/i18n';
-import { ModalShareProfile } from '../modals/share-profile';
+import { Fragment, useRef, useState } from 'react';
+// import { KeenIcon } from '../keenicons';
+import { KeenIcon } from '@/components/keenicons';
+
+// import { useLanguage } from '@/i18n';
 import { ModalGiveAward } from '../modals/give-award';
 import { ModalReportUser } from '../modals/report-user';
-import { Dialog, DialogTrigger } from '@/components/ui/dialog';
+import { ModalShareProfile } from '../modals/share-profile';
 
 const NavbarDropdown = () => {
     const itemRef = useRef<any>(null);
-    const { isRTL } = useLanguage();
+    // const { isRTL } = useLanguage();
 
     const [ShareProfileModalOpen, setShareProfileModalOpen] = useState(false);
     const handleSettingsModalOpen = () => {
@@ -45,13 +46,24 @@ const NavbarDropdown = () => {
                     ref={itemRef}
                     toggle="dropdown"
                     trigger="click"
+                    // dropdownProps={{
+                    //     placement: isRTL() ? 'bottom-start' : 'bottom-end',
+                    //     modifiers: [
+                    //         {
+                    //             name: 'offset',
+                    //             options: {
+                    //                 offset: isRTL() ? [0, -10] : [0, 10], // [skid, distance]
+                    //             },
+                    //         },
+                    //     ],
+                    // }}>
                     dropdownProps={{
-                        placement: isRTL() ? 'bottom-start' : 'bottom-end',
+                        placement: 'bottom-start',
                         modifiers: [
                             {
                                 name: 'offset',
                                 options: {
-                                    offset: isRTL() ? [0, -10] : [0, 10], // [skid, distance]
+                                    offset: [0, -10], // [skid, distance]
                                 },
                             },
                         ],

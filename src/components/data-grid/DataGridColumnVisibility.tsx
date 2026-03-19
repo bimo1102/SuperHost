@@ -1,21 +1,20 @@
-import { Table } from '@tanstack/react-table';
+// import { Table } from '@tanstack/react-table';
 import { Button } from '@/components/ui/button';
 import {
     DropdownMenu,
-    DropdownMenuTrigger,
-    DropdownMenuCheckboxItem,
     DropdownMenuContent,
     DropdownMenuLabel,
     DropdownMenuSeparator,
+    DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { KeenIcon } from '../keenicons';
 
 interface IDataGridColumnVisibilityProps<TData> {
-    table: Table<TData>;
+    // table: Table<TData>;
     hideTitle?: boolean;
 }
 
-export function DataGridColumnVisibility<TData>({ table, hideTitle = false }: IDataGridColumnVisibilityProps<TData>) {
+export function DataGridColumnVisibility<TData>({ hideTitle = false }: IDataGridColumnVisibilityProps<TData>) {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -27,7 +26,7 @@ export function DataGridColumnVisibility<TData>({ table, hideTitle = false }: ID
             <DropdownMenuContent align="end" className="w-[150px]">
                 <DropdownMenuLabel className="font-medium">Toggle Columns</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                {table
+                {/* {table
                     .getAllColumns()
                     .filter((column) => typeof column.accessorFn !== 'undefined' && column.getCanHide())
                     .map((column) => {
@@ -40,7 +39,7 @@ export function DataGridColumnVisibility<TData>({ table, hideTitle = false }: ID
                                 {column.columnDef.meta?.headerTitle || column.id}
                             </DropdownMenuCheckboxItem>
                         );
-                    })}
+                    })} */}
             </DropdownMenuContent>
         </DropdownMenu>
     );

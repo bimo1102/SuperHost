@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { KeenIcon } from '@/components';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 interface IWorkProps {
     image: string;

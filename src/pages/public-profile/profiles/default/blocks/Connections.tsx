@@ -1,6 +1,6 @@
 import { KeenIcon, Menu, MenuItem, MenuToggle } from '@/components';
 import { useLanguage } from '@/i18n';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 import { Link } from 'react-router-dom';
 
 import { DropdownCard1 } from '@/partials/dropdowns/general';

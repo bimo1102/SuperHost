@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 interface IAvatarsItem {
     path?: string;

@@ -1,6 +1,6 @@
 import { KeenIcon, Menu, MenuItem, MenuToggle } from '@/components';
 import { useLanguage } from '@/i18n';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 import { DropdownCard2 } from '../dropdowns/general';
 import { IWorkProps } from './CardWork';
 

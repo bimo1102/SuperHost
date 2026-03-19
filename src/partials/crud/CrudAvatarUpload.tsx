@@ -1,7 +1,7 @@
 import { KeenIcon } from '@/components';
 import type { IImageInputFile } from '@/components/image-input';
 import { ImageInput } from '@/components/image-input';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 import { useState } from 'react';
 
 const CrudAvatarUpload = () => {

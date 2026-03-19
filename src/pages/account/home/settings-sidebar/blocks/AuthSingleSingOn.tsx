@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 interface IAuthSingleSingOnItem {
     logo: string;

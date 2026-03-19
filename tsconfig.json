@@ -28,7 +28,8 @@
             "@fc-aiot-fe-share/*": ["../fc-aiot-fe-share/*"],
             "@/*": ["./src/*"],
             "@services": ["./src/services"]
-        }
+        },
+        "resolveJsonModule": true
     },
     "include": ["src/**/*", "../fc-aiot-fe-share/**/*", "federation.d.ts"],
     "exclude": ["node_modules"]

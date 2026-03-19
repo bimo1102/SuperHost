@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 import { Comments, Heading, Likes, Saves, Tabs } from '../post/';
 

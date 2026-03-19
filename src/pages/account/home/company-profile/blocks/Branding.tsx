@@ -1,5 +1,5 @@
 import { KeenIcon } from '@/components';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 import { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 

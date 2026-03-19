@@ -3,7 +3,7 @@ import { Container } from '@/components/container';
 import { PageMenu } from '@/pages/public-profile';
 import { UserProfileHero } from '@/partials/heros';
 import { Navbar, NavbarActions, NavbarDropdown } from '@/partials/navbar';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 import { Fragment } from 'react';
 import { ProfileModalContent } from '.';
 

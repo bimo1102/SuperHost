@@ -1,7 +1,7 @@
 import { KeenIcon, Menu, MenuItem, MenuToggle } from '@/components';
 import { useLanguage } from '@/i18n';
 import { DropdownCrud1, DropdownCrudItem1 } from '@/partials/dropdowns/general';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 interface IMembersItem {
     avatar: string;

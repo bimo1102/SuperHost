@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 import { KeenIcon } from '@/components';
 import { Container } from '@/components/container';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 import { PageMenu } from '@/pages/public-profile';
 import { UserProfileHero } from '@/partials/heros';

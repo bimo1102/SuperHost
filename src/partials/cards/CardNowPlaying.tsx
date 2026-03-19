@@ -1,5 +1,5 @@
 import { CommonAvatars } from '@/partials/common';
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 interface INowPlayingItem {
     number: string;

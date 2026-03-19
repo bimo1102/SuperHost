@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils/Assets';
+import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 
 interface IStatisticsItem {
     image: string;
