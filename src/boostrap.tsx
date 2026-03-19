@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { App } from './App';
 import { ProvidersWrapper } from './providers';
 
-import '../keenicons/assets/styles.css';
+import '@/components/keenicons/assets/styles.css';
 import '@/styles/globals.css';
 
 const bootstrapApplication = () => {

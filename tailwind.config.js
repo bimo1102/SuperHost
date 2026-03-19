@@ -680,10 +680,10 @@ module.exports = {
                 },
             },
             layouts: {
-                demo1: {
+                main: {
                     sidebar: {
                         width: {
-                            desktop: '280px',
+                            desktop: '350px',
                             desktopCollapse: '80px',
                             mobile: '280px',
                         },
