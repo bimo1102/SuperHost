@@ -1,4 +1,4 @@
-import { KeenIcon } from '@/components/keenicons';
+import { KeenIcon } from '../keenicons';
 import { useDemo7Layout } from '@/layouts/demo7/Demo7LayoutProvider';
 import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 import { Link } from 'react-router-dom';

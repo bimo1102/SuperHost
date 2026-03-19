@@ -1,4 +1,4 @@
-import { KeenIcon } from '@/components/keenicons';
+import { KeenIcon } from '../keenicons';
 import { toAbsoluteUrl } from '@fc-aiot-fe-share/utils';
 import { Link } from 'react-router-dom';
 

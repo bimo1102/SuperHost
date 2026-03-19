@@ -1,4 +1,4 @@
-import { KeenIcon } from '@/components/keenicons';
+import { KeenIcon } from '../keenicons';
 import { Menu, MenuArrow, MenuIcon, MenuItem, MenuLink, MenuSub, MenuTitle, MenuToggle } from '@/components/menu';
 import { MENU_ROOT } from '@/config';
 import { useLanguage } from '@/i18n';

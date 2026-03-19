@@ -1,5 +1,5 @@
 import { Menu, MenuItem, MenuToggle } from '@/components';
-import { KeenIcon } from '@/components/keenicons';
+import { KeenIcon } from '../keenicons';
 import { useLanguage } from '@/i18n';
 import { DropdownChat } from '@/partials/dropdowns/chat';
 import { DropdownNotifications } from '@/partials/dropdowns/notifications';
