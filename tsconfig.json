@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "allowJs": true,
+        "sourceMap": false,
+        "outDir": "./build",
+        "rootDir": "..",
+        "rootDirs": ["src", "../fc-aiot-fe-share"],
+        "checkJs": false,
+        "allowUnusedLabels": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "strict": false,
+        "jsx": "react-jsx",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "emitDeclarationOnly": false,
+        "emitDecoratorMetadata": false,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "target": "ES2016",
+        "ignoreDeprecations": "6.0",
+        "paths": {
+            "@fc-aiot-fe-share/*": ["../fc-aiot-fe-share/*"],
+            "@/*": ["./src/*"],
+            "@services": ["./src/services"]
+        }
+    },
+    "include": ["src/**/*", "../fc-aiot-fe-share/**/*", "federation.d.ts"],
+    "exclude": ["node_modules"]
+}
