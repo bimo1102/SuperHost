@@ -5,10 +5,10 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "start": "webpack serve --config webpack.dev.js",
-        "build": "webpack --config webpack.prod.js --mode production",
-        "build:development": "webpack --config webpack.dev.js",
-        "build:production": "webpack --config webpack.prod.js",
+        "start": "set NODE_ENV=development&& webpack serve --config webpack.dev.js",
+        "build": "set NODE_ENV=production&& webpack --config webpack.prod.js --mode production",
+        "build:staging": "set NODE_ENV=staging&& webpack --config webpack.staging.js --mode production",
+        "build:production": "set NODE_ENV=production&& webpack --config webpack.prod.js --mode production",
         "live": "live-server ./build --port=3000 --no-browser"
     },
     "devDependencies": {

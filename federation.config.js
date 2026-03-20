@@ -1,6 +1,9 @@
 const params = `?version=${new Date().getTime()}`;
-require('dotenv').config({ path: './.env.development' });
-
+const path = require('path');
+const nodeEnv = process.env.NODE_ENV;
+require('dotenv').config({
+    path: path.resolve(process.cwd(), `.env.${nodeEnv}`),
+});
 module.exports = {
     moduleName: 'host',
     remotes: {
